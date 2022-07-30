@@ -1,9 +1,10 @@
-body {
+@media screen and (max-width: 767px) {
+  body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     color: $main-text-col;
-  
+
     background-color: $clear-col;
   }
   h1,
@@ -50,7 +51,7 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-  
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -61,16 +62,43 @@ body {
     padding-left: 0;
     margin: 0;
   }
-  
   .current_page {
     position: absolute;
     bottom: 0;
-  
+
     width: 100%;
-  
+
     border: 2px solid $accent-col;
     border-radius: 2px;
   }
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .flex_container {
+    display: flex;
+  }
+  .join-link-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $main-text-col;
+
+    background-color: $clear-col;
+  }
+
   .container {
     width: 1200px;
     margin: 0 auto;
@@ -88,3 +116,4 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
