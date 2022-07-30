@@ -93,6 +93,13 @@ address {
     margin: 0 auto;
     padding: 0 15px;
   }
+  .join-link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   body {
