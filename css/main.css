@@ -302,6 +302,7 @@ address {
             flex-direction: column;
     gap: 10px;
     margin-left: auto;
+    margin-top: -10px;
     opacity: 1;
   }
   .header-contacts__item {
