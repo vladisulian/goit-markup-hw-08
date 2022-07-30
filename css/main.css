@@ -454,6 +454,9 @@ p {
     padding-top: 30px;
     color: #000000;
     background-color: #ffffff;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
   }
   .modal__title {
     font-size: 20px;
@@ -497,7 +500,7 @@ p {
     color: #757575;
   }
   .modal-label__input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     margin-top: 4px;
     padding-left: 40px;
@@ -528,8 +531,8 @@ p {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal__feedback {
-    width: 448px;
-    height: 138px;
+    width: 370px;
+    height: 120px;
     padding-left: 16px;
     padding-top: 12px;
     margin-top: 4px;
@@ -628,11 +631,13 @@ p {
     background-color: #e9ecef;
   }
   .modal-checkbox__text {
-    line-height: 1.7142857143;
+    font-size: 12px;
+    line-height: 1.1666666667;
     color: #757575;
   }
   .modal-checkbox__link {
-    line-height: 1.7142857143;
+    font-size: 12px;
+    line-height: 1.1666666667;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
     color: #2196f3;
