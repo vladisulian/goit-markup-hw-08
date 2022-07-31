@@ -1,5 +1,5 @@
 // * mobile
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .header {
     height: 60px;
 
@@ -96,7 +96,7 @@
 }
 
 // * tablet styles
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     min-width: 768px;
     height: 80px;
@@ -204,17 +204,21 @@
 @media screen and (min-width: 1200px) {
   .header {
     height: 80px;
+
+    border-bottom: 1px solid $header-line-col;
   }
+
   .Web {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
 
     color: $accent-col;
   }
-
+  .logo {
+    font-style: normal;
+  }
   .Studio {
     color: $studio-text-col;
   }
