@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 380px) and (max-width: 767px) {
   .main-team {
     text-align: center;
     background-color: $our-team-bg-col;
@@ -80,7 +80,8 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-team {
     text-align: center;
     background-color: $our-team-bg-col;

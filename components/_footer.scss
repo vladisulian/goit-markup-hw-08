@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 380px) and (max-width: 767px) {
   .footer {
     padding: 60px 0;
 
@@ -178,7 +178,8 @@
     padding-left: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     padding: 60px 0;
 
