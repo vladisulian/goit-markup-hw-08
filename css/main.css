@@ -493,6 +493,14 @@ address {
     margin-right: 10px;
     fill: currentColor;
   }
+  .mobile-navMenu__openBtn {
+    display: none;
+    opacity: 0;
+  }
+  .mobile-navMenu__backdrop {
+    display: none;
+    opacity: 0;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main {
@@ -514,6 +522,13 @@ address {
     background-image: url(../images/main_bg_pic\ w480\ @2.jpg);
     background-position: center;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
