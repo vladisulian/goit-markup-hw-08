@@ -821,12 +821,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal__closeBtn:hover,
-  .modal__closeBtn:focus {
-    color: $accent-col;
-  }
 
+    &:hover,
+    &:focus {
+      color: $accent-col;
+    }
+  }
   .modal__submit {
     width: 200px;
     height: 50px;

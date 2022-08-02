@@ -269,9 +269,11 @@ address {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
-    color: red;
+    color: #000;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
   }
   .modal-openBtnIcon {
     width: 40px;
@@ -1526,8 +1528,7 @@ address {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal__closeBtn:hover,
-.modal__closeBtn:focus {
+  .modal_closeBtnIcon:hover, .modal_closeBtnIcon:focus {
     color: #2196f3;
   }
   .modal__submit {

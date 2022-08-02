@@ -104,10 +104,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
 
-    color: red;
+    color: #000;
+    background: transparent;
+
+    outline: none;
+    border: none;
+
+    color: black;
   }
   .modal-openBtnIcon {
     width: 40px;
