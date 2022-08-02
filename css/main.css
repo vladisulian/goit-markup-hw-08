@@ -1719,6 +1719,7 @@ address {
   text-align: center;
   padding-top: 0;
   display: none;
+  visibility: hidden;
 }
 
 .main-wawd__title {
