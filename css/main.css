@@ -496,7 +496,7 @@ address {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main {
-    width: 320px;
+    width: 480px;
     height: 400px;
     margin: 0 auto;
     padding: 200px 0;
