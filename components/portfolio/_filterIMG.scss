@@ -77,14 +77,17 @@
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
-    color: $main-text-col;
+
     letter-spacing: 0.06em;
 
-    margin-bottom: 4px;
+    color: $main-text-col;
   }
   .filter-img__subtitle {
+    font-weight: 400;
     font-size: 16px;
     line-height: calc(30 / 16);
+
+    letter-spacing: 0.03em;
 
     color: $secondary-text-col;
   }
@@ -95,7 +98,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 18px;
+    gap: 30px;
     /* !!flex-basis didn't work!! */
     /* flex-basis: calc((100% - 40px) / 3); */
   }
@@ -251,5 +254,5 @@
 
     color: $secondary-text-col;
   }
-  // ! don't move ".current_btn" & ".current"
 }
+// ! don't move ".current_btn" & ".current"
