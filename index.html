@@ -30,20 +30,14 @@
         <nav class="header-nav">
           <ul class="header-nav__list list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link current">
-                Студия
-              </a>
+              <a href="./index.html" class="header-nav__link current"> Студия </a>
               <div class="current_page"></div>
             </li>
             <li class="header-nav__item">
-              <a href="./portfolio.html" class="header-nav__link">
-                Портфолио
-              </a>
+              <a href="./portfolio.html" class="header-nav__link"> Портфолио </a>
             </li>
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link">
-                Контакты
-              </a>
+              <a href="#" class="header-nav__link"> Контакты </a>
             </li>
           </ul>
         </nav>
@@ -68,9 +62,67 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
-        
-
+      <!-- ! mobile-modal open button -->
+      <button class="mobile-navMenu__openBtn" data-mobile-modal-open>
+        <svg class="modal_closeBtnIcon">
+          <use href="./images/mobile-modal-open-btn.svg"></use>
+        </svg>
+      </button>
+      <!-- ! mobile nav menu -->
+      <div class="mobile-navMenu__backdrop is-hidden" data-mobile-modal>
+        <div class="mobile-navMenu__modal">
+          <ul class="mobile-navMenu__list list">
+            <li class="mobile-navMenu__item">
+              <a href="./index.html">
+                <p>Студия</p>
+              </a>
+            </li>
+            <li class="mobile-navMenu__item">
+              <a href="">
+                <p>Портфолио</p>
+              </a>
+            </li>
+            <li class="mobile-navMenu__item">
+              <a href="">
+                <p>Контакты</p>
+              </a>
+            </li>
+          </ul>
+          <!-- *contacts -->
+          <div class="mobile-navMenu__contacts">
+            <!-- ! contacts item -->
+            <ul class="mobile-navMenu__contacts-list">
+              <li class="mobile-navMenu__contacts-item">+38 096 111 11 11</li>
+              <li class="mobile-navMenu__contacts-item">info@devstudio.com</li>
+            </ul>
+            <!-- ! web item -->
+            <ul class="mobile-navMenu__web">
+              <li class="mobile-navMenu__web-item">
+                <a href="https://www.instagram.com">
+                  <p class="mobile-navMenu__web-item">Instagram</p>
+                </a>
+              </li>
+              <li class="mobile-navMenu__web-item">
+                <a href="https://twitter.com/?lang=ru">
+                  <p class="mobile-navMenu__web-item">Twitter</p>
+                </a>
+              </li>
+              <li class="mobile-navMenu__web-item">
+                <a href="https://uk-ua.facebook.com">
+                  <p class="mobile-navMenu__web-item">Facebook</p>
+                </a>
+              </li>
+              <li class="mobile-navMenu__web-item">
+                <a
+                  href="https://www.linkedin.com/in/владислав-ульянеев-21a1
+                33240/"
+                >
+                  <p class="mobile-navMenu__web-item">Linkedin</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -553,5 +605,6 @@
 
     <!-- ! ##### js script ##### ! -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
   </body>
 </html>
