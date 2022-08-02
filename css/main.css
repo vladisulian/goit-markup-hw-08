@@ -180,16 +180,20 @@ address {
   }
   .Web {
     font-size: 24px;
+    font-weight: 700;
     line-height: 1.1666666667;
+    height: 28px;
     color: #2196f3;
-    padding-top: 16px;
-    padding-left: 15px;
+    margin-top: 16px;
+    margin-left: 15px;
   }
   .Studio {
     color: #000000;
   }
   .header-nav {
+    height: 60px;
     opacity: 0;
+    pointer-events: none;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -221,6 +225,7 @@ address {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    opacity: 0;
     display: none;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -237,7 +242,8 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 32px 0;
+    opacity: 0;
+    display: none;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -263,8 +269,16 @@ address {
     position: absolute;
     top: 0;
     right: 0;
+    width: 40px;
+    height: 40px;
+    color: red;
   }
-  .backdrop {
+  .modal-openBtnIcon {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
+  .mobile-navMenu__backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -279,7 +293,7 @@ address {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .backdrop.is-hidden {
+  .mobile-navMenu__backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
