@@ -172,7 +172,7 @@ address {
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 60px;
     border-bottom: 1px solid #ececec;
@@ -452,7 +452,7 @@ address {
     fill: currentColor;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main {
     max-width: 480px;
     height: 400px;
@@ -467,14 +467,14 @@ address {
     background-size: cover;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 380px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 380px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 380px) and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .main .main {
     background-image: url(../images/main_bg_pic\ w480\ @2.jpg);
     background-position: center;
     background-size: cover;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main_tittle {
     width: 360px;
     margin: 0 auto;
@@ -487,7 +487,7 @@ address {
     color: #ffffff;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main__button {
     min-width: 200px;
     padding: 10px 32px;
@@ -670,7 +670,7 @@ address {
             box-shadow: 0 0 0 1.5px #2196f3;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -977,8 +977,10 @@ address {
   }
   .modal {
     position: absolute;
-    top: 208px;
-    left: 159px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 450px;
     height: 609px;
     padding: 40px;
@@ -1522,7 +1524,7 @@ address {
             box-shadow: 0 0 0 1.5px #2196f3;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main-traits__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1755,7 +1757,7 @@ address {
     background-color: rgba(47, 48, 58, 0.8);
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main-team {
     text-align: center;
     background-color: #f5f4fa;
@@ -2019,7 +2021,7 @@ address {
     fill: currentColor;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .main-customers__title {
     font-weight: 700;
     font-size: 36px;
@@ -2170,7 +2172,7 @@ address {
     height: 106px;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer {
     padding: 60px 0;
     background-color: #2f303a;

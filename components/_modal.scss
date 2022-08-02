@@ -1,4 +1,4 @@
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -310,8 +310,9 @@
 
   .modal {
     position: absolute;
-    top: 208px;
-    left: 159px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     width: 450px;
     height: 609px;
