@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
 
     background: $svg-box-bg-col;
@@ -24,6 +24,11 @@
     width: 70px;
     height: 70px;
   }
+  .main-traits__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main-traits__title {
     font-weight: 700;
     font-size: 14px;
@@ -33,7 +38,7 @@
     margin-bottom: 10px;
   }
   .main-traits__subtitle {
-    width: 270px;
+    width: 450px;
     line-height: 24px;
 
     color: $secondary-text-col;
