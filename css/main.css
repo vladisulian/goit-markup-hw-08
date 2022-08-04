@@ -2322,7 +2322,7 @@ address {
     fill: currentColor;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .main-customers__title {
     font-weight: 700;
     font-size: 36px;
@@ -2339,6 +2339,7 @@ address {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
   .main-customers__link {
@@ -2351,7 +2352,58 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 170px;
+    height: 92px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    color: #afb1b8;
+    -webkit-transition-property: color, border-color;
+    transition-property: color, border-color;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main-customers__link:hover, .main-customers__link:focus {
+    color: #2196f3;
+    border-color: #2196f3;
+  }
+  .main-customers__icon {
+    width: 106px;
+    height: 106px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-customers__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .main-customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .main-customers__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 210px;
     height: 92px;
     outline: none;
     border-radius: 4px;
