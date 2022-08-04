@@ -67,6 +67,7 @@ address {
   margin: 0;
 }
 .current_page {
+  display: none;
   position: absolute;
   bottom: 0;
 
@@ -114,6 +115,11 @@ address {
     justify-content: space-around;
     align-items: baseline;
   }
+
+  .current_page{
+    display: flex;
+
+  }
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -142,5 +148,9 @@ address {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .current_page{
+    display: flex;
   }
 }

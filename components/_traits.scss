@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
+    width: 320px;
     height: 120px;
 
     background: $svg-box-bg-col;
@@ -38,8 +38,10 @@
     margin-bottom: 10px;
   }
   .main-traits__subtitle {
-    width: 450px;
+    width: 320px;
     line-height: 24px;
+
+    padding-left: 15px;
 
     color: $secondary-text-col;
   }
