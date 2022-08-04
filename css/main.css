@@ -331,7 +331,7 @@ address {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20px;
-    width: 320px;
+    width: 100%;
     height: 100%;
     z-index: 100000;
     background-color: #ffffff;
@@ -362,7 +362,7 @@ address {
   }
   .mobile-navMenu__link {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.175;
     text-align: center;
     letter-spacing: 0.02em;
@@ -392,7 +392,7 @@ address {
   }
   .mobile-navMenu__contacts-item {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1.1764705882;
     letter-spacing: 0.02em;
     color: #757575;
@@ -423,12 +423,12 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 20px;
+    gap: 2px;
     margin-top: 64px;
   }
   .mobile-navMenu__web-link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.2222222222;
     letter-spacing: 0.02em;
     color: #2196f3;
