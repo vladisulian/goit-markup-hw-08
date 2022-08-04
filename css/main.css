@@ -1797,6 +1797,15 @@ address {
   .modal-label:hover .modal-label__icon {
     color: #2196f3;
   }
+  .modal-label__input {
+    width: 448px;
+  }
+  .modal__feedback {
+    width: 448px;
+  }
+  .modal-checkbox__text {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 767px) {
   .main-traits__list {
