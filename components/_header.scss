@@ -541,9 +541,18 @@
 
     z-index: 100000000000;
 
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     & > svg {
       width: 18.67px;
       height: 18.67px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-col;
     }
   }
 }

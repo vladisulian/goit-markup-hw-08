@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .footer {
     padding: 60px 0;
 
@@ -91,7 +91,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-left: auto;
+    // margin-left: auto;
     margin-top: 60px;
   }
   .footer-subscription__title {
@@ -175,6 +175,188 @@
 
   .footer-subscription__icon {
     width: 35px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .footer {
+    padding: 60px 0;
+
+    background-color: $main-bg-col;
+  }
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_web {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+
+    color: $accent-col;
+  }
+  .footer_studio {
+    color: $btn-text-col;
+  }
+  .footer-address__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contacts {
+    line-height: 24px;
+
+    color: $secondary-text-col;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:first-child) {
+      margin-top: 9px;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-col;
+    }
+  }
+  .footer__map {
+    line-height: 24px;
+
+    color: $btn-text-col;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-col;
+    }
+  }
+
+  // ! join
+
+  .footer-join {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-join__text {
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $btn-text-col;
+
+    margin-bottom: 20px;
+  }
+  .footer-join__item {
+    fill: white;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  .footer-join__link {
+    color: white;
+  }
+
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // margin-left: auto;
+    margin-top: 60px;
+  }
+  .footer-subscription__title {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: $btn-text-col;
+  }
+
+  .footer-subscription__label {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $btn-text-col;
+  }
+  .footer-subscription__input {
+    width: 450px;
+    height: 50px;
+
+    margin-bottom: 20px;
+    padding-left: 16px;
+
+    outline: none;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: $btn-text-col;
+    background-color: transparent;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: $accent-col;
+    }
+  }
+
+  .footer-subscription__button {
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 29px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    color: $btn-text-col;
+    background-color: $accent-col;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $btn-text-col;
+      background-color: $btn-hover-col;
+    }
+    &:focus {
+      color: $btn-text-col;
+    }
+  }
+
+  .footer-subscription__icon {
+    width: 35px;
+    height: 35px;
     padding-left: 10px;
   }
 }
@@ -361,19 +543,19 @@
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 60px 0;
-  
+
     background-color: $main-bg-col;
   }
-  
+
   .footer_web {
     display: block;
     margin-bottom: 20px;
-  
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
-  
+
     color: $accent-col;
   }
   .footer_studio {
@@ -381,13 +563,13 @@
   }
   .footer__contacts {
     line-height: 24px;
-  
+
     color: $secondary-text-col;
-  
+
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:not(:first-child) {
       margin-top: 9px;
     }
@@ -396,22 +578,22 @@
       color: $accent-col;
     }
   }
-  
+
   .footer__map {
     line-height: 24px;
-  
+
     color: $btn-text-col;
-  
+
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:hover,
     &:focus {
       color: $accent-col;
     }
   }
-  
+
   .footer-join {
     margin-left: 70px;
   }
@@ -420,19 +602,19 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $btn-text-col;
-  
+
     margin-bottom: 20px;
   }
   .footer-join__item {
     fill: white;
-  
+
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
   }
   .footer-join__link {
     color: white;
   }
-  
+
   .footer-subscription {
     margin-left: auto;
   }
@@ -441,28 +623,28 @@
     line-height: calc(16 / 14);
     text-transform: uppercase;
     margin-bottom: 20px;
-  
+
     color: $btn-text-col;
   }
-  
+
   .footer-subscription__label {
     display: flex;
     color: $btn-text-col;
   }
   .footer-subscription__label > input {
     width: 358px;
-  
+
     padding-left: 16px;
-  
+
     outline: none;
-  
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-  
+
     color: $btn-text-col;
     background-color: transparent;
-  
+
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -471,36 +653,36 @@
   .footer-subscription__input:focus {
     border-color: $accent-col;
   }
-  
+
   .footer-subscription__button {
     width: 200px;
     height: 50px;
     margin-left: 12px;
     padding-left: 29px;
-  
+
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-  
+
     border: none;
     outline: none;
-  
+
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-  
+
     cursor: pointer;
-  
+
     color: $btn-text-col;
     background-color: $accent-col;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-  
+
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
     &:hover {
       color: $btn-text-col;
       background-color: $btn-hover-col;
@@ -509,10 +691,9 @@
       color: $btn-text-col;
     }
   }
-  
+
   .footer-subscription__icon {
     width: 35px;
     padding-left: 10px;
   }
-  
 }
