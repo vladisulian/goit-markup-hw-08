@@ -155,6 +155,8 @@
   }
 
   .filter-img__descContainer {
+    height: 147px;
+
     padding: 20px 24px;
 
     border: 1px solid #eeeeee;
@@ -174,6 +176,10 @@
     line-height: calc(30 / 16);
 
     color: $secondary-text-col;
+  }
+
+  .size-limiter {
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
