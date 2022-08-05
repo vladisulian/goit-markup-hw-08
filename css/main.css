@@ -2388,8 +2388,8 @@ address {
 @media (min-width: 480px) and (max-width: 767px) {
   .main-customers__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666666667;
+    font-size: 28px;
+    line-height: 1.1785714286;
     text-align: center;
     margin-bottom: 50px;
   }
