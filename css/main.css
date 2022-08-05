@@ -2941,6 +2941,10 @@ address {
     padding-bottom: 60px;
     background-color: #2f303a;
   }
+  .footer-address-container {
+    height: 79px;
+    margin: 60px 0;
+  }
   .footer-address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2956,7 +2960,6 @@ address {
   }
   .footer_web {
     display: block;
-    margin-top: 60px;
     margin-bottom: 20px;
     font-family: "Raleway";
     font-weight: 700;
