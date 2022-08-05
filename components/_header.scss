@@ -162,14 +162,10 @@
   }
   .mobile-navMenu__list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
 
     gap: 35.71px;
-
     margin-bottom: auto;
 
     color: $accent-col;
@@ -253,6 +249,8 @@
 
       border: 1px solid rgba(33, 33, 33, 0.2);
       transform: rotate(90deg);
+
+      color: $secondary-text-col;
     }
   }
   .mobile-navMenu__modal-close {
@@ -437,12 +435,10 @@
   }
   .mobile-navMenu__list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
 
     gap: 35.71px;
-
     margin-bottom: auto;
 
     color: $accent-col;
@@ -526,6 +522,8 @@
 
       border: 1px solid rgba(33, 33, 33, 0.2);
       transform: rotate(90deg);
+
+      color: $secondary-text-col;
     }
   }
   .mobile-navMenu__modal-close {

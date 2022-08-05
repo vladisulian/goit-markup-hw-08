@@ -342,20 +342,13 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 35.71px;
     margin-bottom: auto;
     color: #2196f3;
@@ -441,6 +434,7 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+    color: #757575;
   }
   .mobile-navMenu__modal-close {
     position: absolute;
@@ -607,8 +601,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -696,6 +688,7 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+    color: #757575;
   }
   .mobile-navMenu__modal-close {
     position: absolute;
@@ -1821,6 +1814,9 @@ address {
             align-items: center;
     gap: 30px;
   }
+  .main-traits__item {
+    width: 300px;
+  }
   .main-traits__svgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2070,8 +2066,8 @@ address {
   }
   .main-team__text {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666666667;
+    font-size: 28px;
+    line-height: 1.1785714286;
   }
   .main-team__list {
     display: -webkit-box;
@@ -2334,9 +2330,9 @@ address {
 @media screen and (max-width: 479px) {
   .main-customers__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666666667;
-    text-align: center;
+    font-size: 28px;
+    line-height: 1.1785714286;
+    width: 314px;
     margin-bottom: 50px;
   }
   .main-customers__list {
