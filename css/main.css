@@ -431,7 +431,7 @@ address {
     width: 22px;
     height: 0px;
     margin-left: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 5px;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     color: #757575;
@@ -677,6 +677,7 @@ address {
     font-size: 18px;
     line-height: 1.2222222222;
     margin-left: 5px;
+    margin-right: 5px;
     letter-spacing: 0.02em;
     color: #2196f3;
   }
@@ -685,7 +686,6 @@ address {
     width: 22px;
     height: 0px;
     margin-left: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     color: #757575;
@@ -3284,6 +3284,7 @@ address {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    row-gap: 15px;
     margin-bottom: 50px;
     gap: 8px;
   }
