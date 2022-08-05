@@ -364,7 +364,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    padding: 60px 0;
+    // padding: 60px 0;
+    padding-bottom: 60px;
 
     background-color: $main-bg-col;
   }
@@ -372,6 +373,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 60px;
   }
   .footer_web {
     display: block;
@@ -427,7 +430,7 @@
   // ! join
 
   .footer-join {
-    margin-top: 60px;
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;

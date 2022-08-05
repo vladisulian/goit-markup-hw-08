@@ -109,16 +109,21 @@ address {
     // padding: 0 15px;
   }
   .join-link-container {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-items: baseline;
+
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    align-items: baseline;
   }
 
-  .current_page{
+  .current_page {
     display: flex;
-
   }
 }
 @media screen and (min-width: 1200px) {
@@ -150,7 +155,7 @@ address {
     padding-bottom: 94px;
   }
 
-  .current_page{
+  .current_page {
     display: flex;
   }
 }

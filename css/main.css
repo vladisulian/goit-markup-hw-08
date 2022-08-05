@@ -131,17 +131,17 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
   .current_page {
     display: -webkit-box;
@@ -1616,7 +1616,7 @@ address {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 100%;
+    width: 450px;
     height: 609px;
     padding: 40px;
     padding-top: 30px;
@@ -2459,7 +2459,7 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 170px;
+    width: 226px;
     height: 92px;
     outline: none;
     border-radius: 4px;
@@ -2931,7 +2931,7 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    padding: 60px 0;
+    padding-bottom: 60px;
     background-color: #2f303a;
   }
   .footer-address {
@@ -2945,6 +2945,7 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 60px;
   }
   .footer_web {
     display: block;
@@ -3000,7 +3001,7 @@ address {
     color: #2196f3;
   }
   .footer-join {
-    margin-top: 60px;
+    margin-top: 65px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
