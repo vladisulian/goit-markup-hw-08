@@ -63,83 +63,82 @@
           </li>
         </ul>
       </div>
-        <!-- ! mobile-modal open button -->
-        <button class="mobile-navMenu__openBtn" data-mobile-modal-open>
-          <svg class="modal-openBtnIcon">
-            <use href="./images/icon.svg#icon-open-mob-modal"></use>
-          </svg>
-        </button>
-        <!-- ! mobile nav menu -->
-        <div class="mobile-navMenu__backdrop is-hidden" data-mobile-modal>
-          <div class="mobile-navMenu__modal">
-            <!-- * navigation -->
-            <ul class="mobile-navMenu__list list">
+      <!-- ! mobile-modal open button -->
+      <button class="mobile-navMenu__openBtn" data-mobile-modal-open>
+        <svg class="modal-openBtnIcon">
+          <use href="./images/icon.svg#icon-open-mob-modal"></use>
+        </svg>
+      </button>
+      <!-- ! mobile nav menu -->
+      <div class="mobile-navMenu__backdrop is-hidden" data-mobile-modal>
+        <div class="mobile-navMenu__modal">
+          <!-- * navigation -->
+          <ul class="mobile-navMenu__list list">
+            <li>
+              <a href="./index.html" class="mobile-navMenu__link">
+                <p>Студия</p>
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-navMenu__link current">
+                <p>Портфолио</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-navMenu__link">
+                <p>Контакты</p>
+              </a>
+            </li>
+          </ul>
+          <!-- * contacts -->
+          <div class="mobile-navMenu__contacts">
+            <!-- * contacts item -->
+            <ul class="mobile-navMenu__contacts-list list">
               <li>
-                <a href="./index.html" class="mobile-navMenu__link ">
-                  <p>Студия</p>
+                <a href="tel:+380961111111" class="mobile-navMenu__contacts-item">
+                  +38 096 111 11 11
                 </a>
               </li>
               <li>
-                <a href="./portfolio.html" class="mobile-navMenu__link current">
-                  <p>Портфолио</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="mobile-navMenu__link">
-                  <p>Контакты</p>
+                <a href="mailto:info@devstudio.com" class="mobile-navMenu__contacts-item numb">
+                  info@devstudio.com
                 </a>
               </li>
             </ul>
-            <!-- * contacts -->
-            <div class="mobile-navMenu__contacts">
-              <!-- * contacts item -->
-              <ul class="mobile-navMenu__contacts-list list">
-                <li>
-                  <a href="tel:+380961111111" class="mobile-navMenu__contacts-item">
-                    +38 096 111 11 11
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@devstudio.com" class="mobile-navMenu__contacts-item numb">
-                    info@devstudio.com
-                  </a>
-                </li>
-              </ul>
-              <!-- * web item -->
-              <ul class="mobile-navMenu__web-list">
-                <li>
-                  <a href="https://www.instagram.com">
-                    <p class="mobile-navMenu__web-link line">Instagram</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/?lang=ru">
-                    <p class="mobile-navMenu__web-link line">Twitter</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://uk-ua.facebook.com">
-                    <p class="mobile-navMenu__web-link line">Facebook</p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/владислав-ульянеев-21a1
+            <!-- * web item -->
+            <ul class="mobile-navMenu__web-list">
+              <li>
+                <a href="https://www.instagram.com">
+                  <p class="mobile-navMenu__web-link line">Instagram</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=ru">
+                  <p class="mobile-navMenu__web-link line">Twitter</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://uk-ua.facebook.com">
+                  <p class="mobile-navMenu__web-link line">Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/владислав-ульянеев-21a1
                   33240/"
-                  >
-                    <p class="mobile-navMenu__web-link">Linkedin</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <button class="mobile-navMenu__modal-close" data-mobile-modal-close>
-              <svg>
-                <use href="./images/icon.svg#icon-close-button"></use>
-              </svg>
-            </button>
+                >
+                  <p class="mobile-navMenu__web-link">Linkedin</p>
+                </a>
+              </li>
+            </ul>
           </div>
+          <button class="mobile-navMenu__modal-close" data-mobile-modal-close>
+            <svg>
+              <use href="./images/icon.svg#icon-close-button"></use>
+            </svg>
+          </button>
         </div>
-      </header>
+      </div>
     </header>
     <!-- ! main -->
     <main>
@@ -170,7 +169,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img1.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img1-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img1-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img1-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -189,7 +202,21 @@
             <li class="size-limiter">
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img2.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img2-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img2-w768px.jpg"
+                      media="(min-dith: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img2-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita
@@ -208,7 +235,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img3.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img3-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img3-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img3-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita placeat
@@ -227,7 +268,18 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img4.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source srcset="./images/portfolio/img4-w320px.jpg" media="(max-width:767px)" />
+                    <source
+                      srcset="./images/portfolio/img4-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img4-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, mollitia!
@@ -245,7 +297,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img5.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portoflio/img5-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img5-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img5-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nisi aperiam
@@ -263,7 +329,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img6.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img6-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img6-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img6-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit quasi
@@ -281,7 +361,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img7.jpg" alt="portfolio_pic"  class="filter-img__pic"/>
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img7-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img7-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img7-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam ipsa
@@ -299,7 +393,22 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img8.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img8-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img8-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img8-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laboriosam
@@ -319,7 +428,21 @@
             <li>
               <a href="#" class="filter-img__link">
                 <div class="filter-img__overlaySquare">
-                  <img src="./images/portfolio/img9.jpg" alt="portfolio_pic" class="filter-img__pic" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img9-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img9-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img9-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sint?
@@ -430,6 +553,5 @@
       </div>
     </footer>
     <script src="./js/mobile-modal.js"></script>
-
   </body>
 </html>
