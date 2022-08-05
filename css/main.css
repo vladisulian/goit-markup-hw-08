@@ -143,6 +143,10 @@ address {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .current_page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -928,7 +932,7 @@ address {
   .main {
     max-width: 480px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main_bg_pic\ w480.jpg);
@@ -1007,7 +1011,7 @@ address {
   .main {
     max-width: 480px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main_bg_pic\ w480.jpg);
@@ -1086,7 +1090,7 @@ address {
   .main {
     height: 400px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: #2f303a;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main_bg_pic\ w768.jpg);
@@ -2175,6 +2179,9 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
     margin-top: 50px;
   }
@@ -3287,7 +3294,7 @@ address {
         -ms-flex-pack: start;
             justify-content: flex-start;
     row-gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     gap: 8px;
   }
   .filter-list__button {
@@ -3331,7 +3338,7 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
     gap: 8px;
   }
   .filter-list__button {
