@@ -6,11 +6,6 @@ body {
   color: $main-text-col;
   background-color: $clear-col;
 }
-header,
-footer,
-main {
-  width: 100%;
-}
 h1,
 h2,
 h3,
@@ -92,8 +87,8 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
