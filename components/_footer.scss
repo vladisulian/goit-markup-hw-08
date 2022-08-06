@@ -257,7 +257,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer{
-    padding-top: 0;
+    // padding-top: 0;
   }
   .footer-address-container {
     height: 79px;
@@ -268,7 +268,6 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 60px;
   }
   // footer logo
   .footer_web {
@@ -325,7 +324,8 @@
   // ! join
 
   .footer-join {
-    margin-top: 65px;
+    // margin-top: 65px;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
