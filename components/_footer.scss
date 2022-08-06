@@ -1,5 +1,8 @@
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0;
+  padding-right: 0;
 
   background-color: $main-bg-col;
 }
@@ -253,8 +256,8 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    padding-bottom: 60px;
+  .footer{
+    padding-top: 0;
   }
   .footer-address-container {
     height: 79px;

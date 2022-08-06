@@ -1785,6 +1785,11 @@ address {
     width: 400px;
   }
 }
+.main-traits__subtitle {
+  line-height: 24px;
+  color: #757575;
+}
+
 @media screen and (max-width: 767px) {
   .main-traits__list {
     display: -webkit-box;
@@ -1798,9 +1803,6 @@ address {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
-  }
-  .main-traits__item {
-    width: 300px;
   }
   .main-traits__svgContainer {
     display: -webkit-box;
@@ -1843,10 +1845,7 @@ address {
     margin-bottom: 10px;
   }
   .main-traits__subtitle {
-    width: 320px;
-    line-height: 24px;
     padding-left: 15px;
-    color: #757575;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1861,6 +1860,9 @@ address {
             justify-content: center;
     gap: 30px;
   }
+  .main-traits__item {
+    max-width: 354px;
+  }
   .main-traits__svgContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1871,7 +1873,7 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 270px;
+    width: 354px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -1888,11 +1890,6 @@ address {
     line-height: 1.1428571429;
     text-transform: uppercase;
     margin-bottom: 10px;
-  }
-  .main-traits__subtitle {
-    width: 270px;
-    line-height: 24px;
-    color: #757575;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1929,11 +1926,6 @@ address {
     line-height: 1.1428571429;
     text-transform: uppercase;
     margin-bottom: 10px;
-  }
-  .main-traits__subtitle {
-    width: 270px;
-    line-height: 24px;
-    color: #757575;
   }
 }
 .main-wawd {
@@ -2521,7 +2513,10 @@ address {
   }
 }
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0;
+  padding-right: 0;
   background-color: #2f303a;
 }
 
@@ -2806,7 +2801,7 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    padding-bottom: 60px;
+    padding-top: 0;
   }
   .footer-address-container {
     height: 79px;
