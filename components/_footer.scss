@@ -408,6 +408,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer{
+    padding-top: 0;
+  }
   .footer-join {
     margin-left: 70px;
   }
@@ -435,6 +438,8 @@
 
   .footer-subscription__label {
     display: flex;
+    flex-direction: row;
+
     color: $btn-text-col;
   }
   .footer-subscription__label > input {
@@ -454,5 +459,14 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-subscription__button{
+    margin-bottom: 15px;
+  }
+  .footer-address {
+    align-items: baseline;
+  }
+  .footer-address__list {
+    align-items: baseline;
   }
 }
